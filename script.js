@@ -63,4 +63,4 @@ document.body.addEventListener('touchstart', function() {
             imageElement.add('hidden');
         }
     }
-}, { once: true });
+});
