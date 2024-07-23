@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS:wght@400&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 2em;
+    color: #333;
+    z-index: 1;
+    margin-bottom: 20px;
+    animation: color-change 1s infinite;
+}
+
+.spinning-image {
+    width: 576px; /* Adjust the size as needed */
+    height: 576px; /* Adjust the size as needed */
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+audio {
+    display: none;
+}
+
+@keyframes color-change {
+    0% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: green; }
+    80% { color: blue; }
+    100% { color: purple; }
+}
