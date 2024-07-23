@@ -17,9 +17,25 @@ setInterval(changeColor, 500); // Change color every 500 milliseconds
 document.body.addEventListener('click', function() {
     const audio = document.getElementById('audio');
     const horn = document.getElementById('horn');
+    const textElement = document.getElementById('text')
+    const coords = document.getElementById('coords');
+    const imageElement = document.getElementById('spinning-image');
+    const druecken = document.getElementById('druecken');
+
     if (audio.paused) {
         audio.play();
         horn.play();
+        if (textElement.classList.contains('hidden')) {
+            textElement.classList.remove('hidden');
+            coords.classList.remove('hidden');
+            imageElement.classList.remove('hidden');
+            imageElement.classList.add('spinning-image');
+            druecken.classList.add('hidden');
+        } else {
+            textElement.classList.add('hidden');
+            coords.classList.add('hidden');
+            imageElement.classList.add('hidden');
+        }
     }
 });
 
@@ -27,8 +43,24 @@ document.body.addEventListener('click', function() {
 document.body.addEventListener('touchstart', function() {
     const audio = document.getElementById('audio');
     const horn = document.getElementById('horn');
+    const textElement = document.getElementById('text');
+    const coords = document.getElementById('coords');
+    const imageElement = document.getElementById('spinning-image');
+    const druecken = document.getElementById('druecken');
+
     if (audio.paused) {
         audio.play();
         horn.play();
+        if (textElement.classList.contains('hidden')) {
+            textElement.classList.remove('hidden');
+            coords.classList.remove('hidden');
+            imageElement.classList.remove('hidden');
+            imageElement.classList.add('spinning-image');
+            druecken.classList.add('hidden');
+        } else {
+            textElement.classList.add('hidden');
+            coords.classList.add('hidden')
+            imageElement.add('hidden');
+        }
     }
 }, { once: true });

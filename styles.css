@@ -26,6 +26,15 @@ body, html {
     animation: color-change 1s infinite;
 }
 
+.druecken {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 2em;
+    color: #333;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
 .spinning-image {
     width: 576px; /* Adjust the size as needed */
     height: 576px; /* Adjust the size as needed */
@@ -38,6 +47,10 @@ body, html {
 }
 
 audio {
+    display: none;
+}
+
+.hidden {
     display: none;
 }
 

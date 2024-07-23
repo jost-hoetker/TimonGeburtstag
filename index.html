@@ -8,10 +8,13 @@
 </head>
 <body>
     <div class="container">
-        <div class="text">
+        <div id="text" class="text hidden">
             Happy Birthday
         </div>
-        <img src="party.png" alt="Spinning Image" class="spinning-image">
+        <img src="party.png" alt="Spinning Image" class="hidden" id="spinning-image">
+        <div id="druecken" class="drueckenKlasse">
+            Hier drücken!
+        </div>
     </div>
     <audio id="audio" controls loop>
         <source src="partyMukke.mp3" type="audio/mpeg">
@@ -21,7 +24,7 @@
         <source src="horn.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-    <div class="text">
+    <div id="coords" class="text hidden">
         Coordianten hier einfügen
     </div>
     <script src="script.js"></script>
