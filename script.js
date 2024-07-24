@@ -18,7 +18,6 @@ document.body.addEventListener('click', function() {
     const audio = document.getElementById('audio');
     const horn = document.getElementById('horn');
     const textElement = document.getElementById('text')
-    const coords = document.getElementById('coords');
     const imageElement = document.getElementById('spinning-image');
     const druecken = document.getElementById('druecken');
 
@@ -27,13 +26,11 @@ document.body.addEventListener('click', function() {
         horn.play();
         if (textElement.classList.contains('hidden')) {
             textElement.classList.remove('hidden');
-            coords.classList.remove('hidden');
             imageElement.classList.remove('hidden');
             imageElement.classList.add('spinning-image');
             druecken.classList.add('hidden');
         } else {
             textElement.classList.add('hidden');
-            coords.classList.add('hidden');
             imageElement.classList.add('hidden');
         }
     }
